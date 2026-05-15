@@ -1,0 +1,22 @@
+# Project-specific files
+project-data/
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+Thumbs.db
+.env
+
+# Keep templates and guides
+!templates/
+!frameworks/
+!guides/
+!examples/

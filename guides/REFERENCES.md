@@ -1,0 +1,91 @@
+# Cagan References: Mapping Work to Frameworks
+
+This document maps Marty Cagan's published work (books + SVPG blog) to the frameworks used in the product discovery skill. Use this as a reference library for deepening understanding and updating frameworks as you engage with his content.
+
+---
+
+## Books Reference
+
+### INSPIRED: How to Create Products Customers Love
+Key sections relevant to skill:
+- Chapter: The Motive - Team empowerment
+- Chapter: The Customer - Discovery phase
+- Chapter: The Problems - Problem validation
+- Chapter: The Discovery - Discovery process
+- Chapter: Assessing Product Risks - Four risks framework
+- Chapter: The Team - Cross-functional collaboration
+
+### EMPOWERED: Ordinary People, Extraordinary Products
+Key sections relevant to skill:
+- Chapter: Effective Discovery - Discovery best practices
+- Chapter: Role of the Designer in Discovery
+- Chapter: Role of the Engineer in Discovery
+- Chapter: Ongoing Discovery
+- Chapter: Different Approaches to Discovery
+- Chapter: The OKR Process
+
+### TRANSFORMED: Becoming a Modern Product Organization
+Key sections relevant to skill:
+- Chapter: Product Strategy - Strategic bets
+- Chapter: Talent - Product culture
+- Chapter: Accountability - Outcomes vs. outputs
+
+---
+
+## Framework-to-Source Mapping
+
+| Framework Section | INSPIRED | EMPOWERED | TRANSFORMED |
+|---|---|---|---|
+| Product Team Principles | Ch: The Team | Ch: Coaching | Ch: Talent |
+| Product Strategy Principles | Ch: Prioritization | Ch: OKR Process | Ch: Product Strategy |
+| Product Discovery Principles | Ch: Discovery, Problems, Risks | Ch: Effective Discovery | - |
+| Problem Validation | Ch: Assessing Product Risks | Ch: Effective Discovery | - |
+| Discovery Planning | Ch: Discovery | Ch: Different Approaches | - |
+| Discovery Execution | Ch: Discovery | Ch: Effective Discovery | - |
+| Discovery Synthesis | Ch: Discovery | Ch: Effective Discovery | - |
+| Strategy Definition | Ch: Prioritization | Ch: OKR Process | Ch: Product Strategy |
+
+---
+
+## SVPG Blog Posts to Explore
+
+Add blog posts as you discover them using this format:
+
+**Title:** [Post Title]
+**URL:** https://svpg.com/...
+**Date Published:** [Date]
+**Framework Section:** [Which skill framework this relates to]
+**Key Concept:** [Main idea]
+**Status:** Original / To Review / Updated
+
+Topics to search:
+- Assessing Product Risks
+- Continuous Discovery Interviews
+- Discovery Techniques
+- Customer Reference Programs
+- OKRs
+- Strategy vs. Roadmap
+- Product Insights
+- Product Manager Role
+- Product Designer Role
+- Product Engineering Role
+- Collaborative Product Teams
+
+---
+
+## How to Update This Document
+
+1. After reading a book section, note which framework it connects to
+2. After finding SVPG blog post, add to the list with status
+3. When updating a framework, reference which sources informed the change
+4. Track version history at bottom
+
+---
+
+## Version History
+
+| Date | Framework Section | Update | Source | Notes |
+|---|---|---|---|---|
+| 2025-05-15 | Initial Creation | All sections | INSPIRED, EMPOWERED outline | Foundation from 20 principles |
+| | | | | |
+
