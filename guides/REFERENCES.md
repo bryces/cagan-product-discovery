@@ -111,6 +111,20 @@ Add blog posts as you discover them using this format:
 **Key Concept:** Methods for evaluating the significance and scope of customer problems
 **Status:** To Review
 
+**Title:** Assessing Product Opportunities
+**URL:** [https://www.svpg.com/assessing-product-opportunities/](https://www.svpg.com/assessing-product-opportunities/)
+**Date Published:** December 13, 2006
+**Framework Section:** Discovery Planning
+**Key Concept:** Framework for assessing and prioritizing product opportunities
+**Status:** To Review
+
+**Title:** Lean Canvas vs Opportunity Assessment
+**URL:** [https://www.svpg.com/lean-canvas-vs-opportunity-assessment/](https://www.svpg.com/lean-canvas-vs-opportunity-assessment/)
+**Date Published:** June 22, 2013
+**Framework Section:** Discovery Planning
+**Key Concept:** Comparison of lean canvas and opportunity assessment approaches
+**Status:** To Review
+
 Topics to search:
 - Assessing Product Risks
 - Continuous Discovery Interviews
@@ -141,4 +155,5 @@ Topics to search:
 |---|---|---|---|---|
 | 2025-05-15 | Initial Creation | All sections | INSPIRED, EMPOWERED outline | Foundation from 20 principles |
 | 2026-05-18 | All sections | Added 7 blog posts | SVPG blog references | Multiple framework sections covered |
+| 2026-05-27 | Discovery Planning | Added 2 blog posts | SVPG blog references | Opportunity assessment resources |
 

@@ -158,6 +158,8 @@ You'll know the skill is working when:
 - [Forward Deployed Engineers](https://www.svpg.com/forward-deployed-engineers/) - Product Team Principles
 - [Product Discovery Series](https://www.svpg.com/product-discovery-series/) - Product Discovery Principles
 - [Product Discovery: Pitfalls and Anti-Patterns](https://www.svpg.com/product-discovery-anti-patterns/) - Product Discovery Principles
+- [Assessing Product Opportunities](https://www.svpg.com/assessing-product-opportunities/) - Discovery Planning
+- [Lean Canvas vs Opportunity Assessment](https://www.svpg.com/lean-canvas-vs-opportunity-assessment/) - Discovery Planning
 - [Assessing Customer Impact](https://www.svpg.com/assessing-customer-impact/) - Problem Validation
 
 See [guides/REFERENCES.md](guides/REFERENCES.md) for the complete mapping of all sources to frameworks.
