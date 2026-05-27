@@ -4,7 +4,8 @@ A comprehensive Claude skill for guiding product teams through Marty Cagan's pro
 
 ## What This Is
 
-This skill operationalizes Marty Cagan's discovery and strategy methodology (from INSPIRED, EMPOWERED, and TRANSFORMED) into a working guide for product teams. It helps teams:
+This skill operationalizes Marty Cagan's discovery and strategy methodology into a
+working guide for product teams. It helps teams:
 
 - Validate problem hypotheses using Cagan's four product risks framework
 - Plan and execute customer discovery research

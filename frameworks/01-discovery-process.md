@@ -2,9 +2,12 @@
 
 ## Core Philosophy
 
-Discovery's purpose is to **minimize waste by validating ideas before engineering time is spent**. It's not about validating a predetermined solution, but about learning whether the problem is real, valuable, and solvable.
+Discovery's purpose is to **minimize waste by validating ideas before engineering
+time is spent**. It's about learning whether the problem is real, valuable, and solvable—
+not validating a predetermined solution.
 
-Key insight from Cagan: Most product failures aren't because execution was poor. They're because teams built the wrong thing (wrong problem, wrong solution, or wrong customer).
+Key insight from Cagan: Most product failures stem from building the wrong thing—wrong
+problem, wrong solution, or wrong customer—not from poor execution.
 
 ---
 

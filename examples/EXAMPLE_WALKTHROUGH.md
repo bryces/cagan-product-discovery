@@ -6,7 +6,8 @@ This is a complete walkthrough of using the Cagan framework for a real scenario.
 
 ## Scenario
 
-A product team at an e-commerce company wants to improve mobile checkout. The PM has a hypothesis that checkout is too slow, but hasn't validated it with customers yet.
+A product team at an e-commerce company wants to improve mobile checkout. The PM
+hypothesizes checkout is too slow, but hasn't validated this with customers yet.
 
 ---
 
@@ -116,7 +117,9 @@ Creates affinity map:
 
 ### Key Contradiction
 
-Some customers said "speed is most important," but interviews revealed they were equally concerned about trust. When Mike showed them a fast checkout UI without security signals, they weren't interested. When he showed a slower checkout with clear security indicators, they engaged.
+Customers said "speed is most important," but interviews revealed equal concern about
+trust. Fast checkouts without security signals didn't interest them. Slower checkouts with
+clear security indicators did.
 
 ### Output
 

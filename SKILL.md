@@ -5,7 +5,9 @@ description: Guide product teams through Marty Cagan's discovery and strategy fr
 
 # Marty Cagan Product Discovery & Strategy Skill
 
-This skill guides cross-functional product teams through Cagan's methodology for discovering real customer problems, validating them, and translating findings into strategy work. It's built for Claude Code execution with file I/O capabilities.
+This skill guides cross-functional product teams through Cagan's methodology for
+discovering and validating customer problems, then translating findings into strategy
+work. Built for Claude Code execution with file I/O capabilities.
 
 ## Core Principles (Cagan's 20 Principles)
 

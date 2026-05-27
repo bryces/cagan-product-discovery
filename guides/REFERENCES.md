@@ -1,6 +1,8 @@
 # Cagan References: Mapping Work to Frameworks
 
-This document maps Marty Cagan's published work (books + SVPG blog) to the frameworks used in the product discovery skill. Use this as a reference library for deepening understanding and updating frameworks as you engage with his content.
+This document maps Marty Cagan's published work (books + SVPG blog) to the frameworks
+used in the product discovery skill. Use as a reference library for understanding and
+updating frameworks as you engage with his content.
 
 ---
 
@@ -138,5 +140,5 @@ Topics to search:
 | Date | Framework Section | Update | Source | Notes |
 |---|---|---|---|---|
 | 2025-05-15 | Initial Creation | All sections | INSPIRED, EMPOWERED outline | Foundation from 20 principles |
-| 2026-05-18 | Discovery Execution, Product Team Principles, Product Discovery Principles, Problem Validation | Added 7 blog posts | SVPG blog references | Multiple framework sections covered |
+| 2026-05-18 | All sections | Added 7 blog posts | SVPG blog references | Multiple framework sections covered |
 
