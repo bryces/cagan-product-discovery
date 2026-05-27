@@ -139,6 +139,13 @@ Add blog posts as you discover them using this format:
 **Key Concept:** Canvas tool for defining and communicating value propositions
 **Status:** To Review
 
+**Title:** Opportunity Solution Trees: Visualize Your Discovery to Stay Aligned and Drive Outcomes
+**URL:** [https://www.producttalk.org/opportunity-solution-trees/](https://www.producttalk.org/opportunity-solution-trees/)
+**Date Published:** December 6, 2023
+**Framework Section:** Discovery Synthesis
+**Key Concept:** Framework for mapping opportunities, solutions, and experiments during discovery
+**Status:** To Review
+
 Topics to search:
 - Assessing Product Risks
 - Continuous Discovery Interviews
@@ -169,5 +176,5 @@ Topics to search:
 |---|---|---|---|---|
 | 2025-05-15 | Initial Creation | All sections | INSPIRED, EMPOWERED outline | Foundation from 20 principles |
 | 2026-05-18 | All sections | Added 7 blog posts | SVPG blog references | Multiple framework sections covered |
-| 2026-05-27 | Discovery Planning | Added 4 blog posts + new template | SVPG + external | Opportunity assessment and value prop resources + template |
+| 2026-05-27 | Discovery Planning | Added 5 blog posts + new template | SVPG + external | Opportunity assessment and discovery frameworks + template |
 

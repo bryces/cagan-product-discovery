@@ -168,6 +168,7 @@ You'll know the skill is working when:
 - [Product Opportunity Assessment](https://artkai.io/blog/product-opportunity-assesment) - Discovery Planning
 - [The Value Proposition Canvas](https://www.strategyzer.com/library/the-value-proposition-canvas) - Discovery Planning
 - [Assessing Customer Impact](https://www.svpg.com/assessing-customer-impact/) - Problem Validation
+- [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/) - Discovery Synthesis
 
 See [guides/REFERENCES.md](guides/REFERENCES.md) for the complete mapping of all sources to frameworks.
 
