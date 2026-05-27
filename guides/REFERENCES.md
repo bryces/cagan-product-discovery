@@ -1,8 +1,8 @@
-# Cagan References: Mapping Work to Frameworks
+# References: Mapping Discovery & Strategy Frameworks
 
-This document maps Marty Cagan's published work (books + SVPG blog) to the frameworks
-used in the product discovery skill. Use as a reference library for understanding and
-updating frameworks as you engage with his content.
+This document maps published work from Marty Cagan, Teresa Torres, and others to the
+frameworks used in the Best Practice Empowered Product Team skill. Use as a reference
+library for understanding and updating frameworks as you engage with their content.
 
 ---
 
@@ -32,20 +32,32 @@ Key sections relevant to skill:
 - Chapter: Talent - Product culture
 - Chapter: Accountability - Outcomes vs. outputs
 
+### CONTINUOUS DISCOVERY HABITS: Discover Products That Create Customer Value and Reduce Risk
+**Author:** Teresa Torres  
+Key sections relevant to skill:
+- Chapter 1: The Right Way to Discover - Continuous discovery approach
+- Chapter 2: Talk to Customers - Customer interviews and observation
+- Chapter 3: Synthesize What You Learn - Pattern finding and insights
+- Chapter 4: Share What You Learn - Communicating discoveries
+- Chapter 5: Make Decisions - Using research for strategy
+- Chapter 6: Keep Moving Forward - Maintaining discovery momentum
+- Opportunity Mapping section - Opportunity Solution Trees framework
+
 ---
 
 ## Framework-to-Source Mapping
 
-| Framework Section | INSPIRED | EMPOWERED | TRANSFORMED |
-|---|---|---|---|
-| Product Team Principles | Ch: The Team | Ch: Coaching | Ch: Talent |
-| Product Strategy Principles | Ch: Prioritization | Ch: OKR Process | Ch: Product Strategy |
-| Product Discovery Principles | Ch: Discovery, Problems, Risks | Ch: Effective Discovery | - |
-| Problem Validation | Ch: Assessing Product Risks | Ch: Effective Discovery | - |
-| Discovery Planning | Ch: Discovery | Ch: Different Approaches | - |
-| Discovery Execution | Ch: Discovery | Ch: Effective Discovery | - |
-| Discovery Synthesis | Ch: Discovery | Ch: Effective Discovery | - |
-| Strategy Definition | Ch: Prioritization | Ch: OKR Process | Ch: Product Strategy |
+| Framework Section | INSPIRED | EMPOWERED | TRANSFORMED | Continuous Discovery |
+|---|---|---|---|---|
+| Product Team Principles | Ch: The Team | Ch: Coaching | Ch: Talent | - |
+| Product Strategy Principles | Ch: Prioritization | Ch: OKR Process | Ch: Product Strategy | - |
+| Product Discovery Principles | Ch: Discovery, Problems, Risks | Ch: Effective Discovery | - | Ch: The Right Way to Discover |
+| Problem Validation | Ch: Assessing Product Risks | Ch: Effective Discovery | - | Ch: Talk to Customers |
+| Discovery Planning | Ch: Discovery | Ch: Different Approaches | - | Ch: Talk to Customers |
+| Discovery Execution | Ch: Discovery | Ch: Effective Discovery | - | Ch: Talk to Customers |
+| Discovery Synthesis | Ch: Discovery | Ch: Effective Discovery | - | Ch: Synthesize What You Learn |
+| Opportunity Mapping | - | - | - | Opportunity Solution Trees |
+| Strategy Definition | Ch: Prioritization | Ch: OKR Process | Ch: Product Strategy | Ch: Make Decisions |
 
 ---
 
@@ -177,4 +189,5 @@ Topics to search:
 | 2025-05-15 | Initial Creation | All sections | INSPIRED, EMPOWERED outline | Foundation from 20 principles |
 | 2026-05-18 | All sections | Added 7 blog posts | SVPG blog references | Multiple framework sections covered |
 | 2026-05-27 | Discovery Planning & Synthesis | Added 6 blog posts + 3 templates | SVPG + external + ProductTalk | Opportunity assessment, OST templates, value prop resources |
+| 2026-05-27 | All sections | Added Teresa Torres book + updated mapping | Continuous Discovery Habits | Framework mapping updated to include Torres |
 

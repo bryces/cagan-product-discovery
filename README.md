@@ -181,9 +181,14 @@ You'll know the skill is working when:
 ## Resources
 
 ### Books
+
+**Marty Cagan:**
 - **INSPIRED:** How to Create Products Customers Love
 - **EMPOWERED:** Ordinary People, Extraordinary Products
 - **TRANSFORMED:** Becoming a Modern Product Organization
+
+**Teresa Torres:**
+- **Continuous Discovery Habits:** Discover Products That Create Customer Value and Reduce Risk
 
 ### Online
 - [SVPG (Silicon Valley Product Group)](https://svpg.com)
