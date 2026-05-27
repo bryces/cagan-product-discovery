@@ -19,7 +19,7 @@ Four core documents:
 
 Simply have this repository available when you run Claude Code, and reference:
 
-```
+```text
 I want to use the Cagan product discovery skill from /path/to/cagan-product-discovery
 
 Project folder: /Users/me/projects/my-project
@@ -41,7 +41,7 @@ Can you help us validate and plan discovery?
 
 ### Scenario 1: Starting Fresh Discovery
 
-```
+```text
 Project: /Users/me/projects/checkout-redesign
 Problem hypothesis: Checkout has too many steps, causing abandonment
 North Star: Reduce checkout steps from 5 to 3
@@ -51,7 +51,7 @@ We want to validate this hypothesis and then run discovery.
 
 ### Scenario 2: Already Have Interview Data
 
-```
+```text
 Project: /Users/me/projects/checkout-redesign
 
 We've done 20 customer interviews.
@@ -62,7 +62,7 @@ Can you help us find patterns?
 
 ### Scenario 3: Ready to Define Strategy
 
-```
+```text
 Project: /Users/me/projects/checkout-redesign
 
 Discovery is complete. Key findings: [your findings]
@@ -75,7 +75,7 @@ We want to define our strategy.
 
 The skill creates a project structure:
 
-```
+```tree
 /project-folder/
 ├── discovery/
 │   ├── 01-problem-validation.md

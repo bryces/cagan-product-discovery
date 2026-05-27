@@ -21,7 +21,7 @@ This skill operationalizes Marty Cagan's discovery and strategy methodology (fro
 
 ## File Structure
 
-```
+```tree
 cagan-product-discovery/
 ├── SKILL.md                          # Main skill definition
 ├── README.md                         # This file
@@ -49,7 +49,7 @@ cagan-product-discovery/
 # Have the skill directory available, then in Claude Code:
 ```
 
-```
+```text
 I want to use the Cagan product discovery skill.
 
 Project folder: /Users/me/projects/my-project

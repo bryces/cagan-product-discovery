@@ -12,7 +12,7 @@ A product team at an e-commerce company wants to improve mobile checkout. The PM
 
 ## Stage 1: Problem Validation
 
-### Team Inputs
+### Team Inputs: Problem Validation
 
 **Problem Hypothesis:** Mobile checkout is slow, causing cart abandonment
 
@@ -23,7 +23,7 @@ A product team at an e-commerce company wants to improve mobile checkout. The PM
 - User testing observations show hesitation
 - ~30% of abandoners cite other reasons (shipping cost, lack of saved cards)
 
-### What Gets Generated
+### What Gets Generated: Problem Validation
 
 **File:** `/project/discovery/01-problem-validation.md`
 
@@ -39,7 +39,7 @@ Risk Assessment:
 
 ## Stage 2: Discovery Planning
 
-### Team Inputs
+### Team Inputs: Discovery Planning
 
 **Timeline:** 3 weeks for discovery
 
@@ -50,7 +50,7 @@ Risk Assessment:
 
 **Team:** PM (Jane) + Designer (Mike) + Engineer (Alex)
 
-### What Gets Generated
+### What Gets Generated: Discovery Planning
 
 **Files:**
 - `/project/discovery/02-discovery-plan.md`
@@ -141,11 +141,11 @@ Some customers said "speed is most important," but interviews revealed they were
 
 **Strategic priority?** Yes, high-impact opportunity.
 
-### What Gets Generated
+### What Gets Generated: Strategy Definition
 
 **File:** `/project/strategy/01-okr-definition.md`
 
-```
+```text
 Objective: Increase mobile conversion rate from 1.2% to 3%
 
 Key Results:
@@ -172,7 +172,7 @@ Key Results:
 
 **File:** `/project/strategy/02-strategic-bet.md`
 
-```
+```text
 Bet Statement: If we address speed, trust signals, and form friction together, 
 mobile checkout conversion will increase to 3%, driving $2M+ in incremental revenue
 
@@ -207,7 +207,7 @@ Timeline to Decision: 90 days post-launch
 
 **File:** `/project/strategy/03-discovery-to-delivery-handoff.md`
 
-```
+```text
 What We Discovered:
 - Three separate barriers to mobile checkout: speed, trust, form friction
 - Customer behaviors contradict stated preferences (say speed, but show concern about trust)

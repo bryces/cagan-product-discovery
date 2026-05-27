@@ -52,7 +52,7 @@ This skill guides teams through four interconnected stages:
 
 ## Stage 1: Problem Validation
 
-### Entry Point
+### Entry Point: Problem Validation
 
 When user invokes skill, request:
 1. **Project folder path** - Where to create/save documents (e.g., `/Users/name/project-alpha`)
@@ -149,7 +149,7 @@ Offer guidance on:
 
 ## Stage 3: Discovery Synthesis & Insights
 
-### Entry Point
+### Entry Point: Discovery Synthesis
 
 User indicates they have raw discovery data. Ask:
 1. **Data format** - Interview transcripts? Raw notes? Video?
@@ -203,7 +203,7 @@ Before moving to strategy, ask:
 
 ## Stage 4: Strategy Definition
 
-### Entry Point
+### Entry Point: Strategy Definition
 
 User indicates discovery is complete and findings are synthesized. Ask:
 1. **Has the problem changed from hypothesis?** (What did you learn?)
@@ -264,7 +264,7 @@ If team decides not to pursue: Create `/discovery/decision-log.md`:
 
 The skill automatically creates:
 
-```
+```tree
 /project-folder/
 ├── discovery/
 │   ├── 01-problem-validation.md
