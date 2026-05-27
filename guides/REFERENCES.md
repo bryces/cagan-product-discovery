@@ -188,6 +188,6 @@ Topics to search:
 |---|---|---|---|---|
 | 2025-05-15 | Initial Creation | All sections | INSPIRED, EMPOWERED outline | Foundation from 20 principles |
 | 2026-05-18 | All sections | Added 7 blog posts | SVPG blog references | Multiple framework sections covered |
-| 2026-05-27 | Discovery Planning & Synthesis | Added 6 blog posts + 3 templates | SVPG + external + ProductTalk | Opportunity assessment, OST templates, value prop resources |
+| 2026-05-27 | Discovery Planning & Synthesis | Added 6 blog posts + 3 templates | SVPG + external + ProductTalk | OST templates, assessment |
 | 2026-05-27 | All sections | Added Teresa Torres book + updated mapping | Continuous Discovery Habits | Framework mapping updated to include Torres |
 
