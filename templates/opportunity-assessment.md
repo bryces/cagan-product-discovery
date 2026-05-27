@@ -1,6 +1,8 @@
 # Product Opportunity Assessment
 
-**Purpose:** Assess whether a product opportunity is worth pursuing before committing to full discovery and development resources. This canvas helps teams evaluate opportunities against strategic fit, market potential, and feasibility.
+**Purpose:** Assess whether a product opportunity is worth pursuing before committing
+resources. This canvas evaluates opportunities against strategic fit, market potential,
+desirability, viability, and feasibility.
 
 ---
 
