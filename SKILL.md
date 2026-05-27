@@ -1,15 +1,16 @@
 ---
-name: cagan-product-discovery
-description: Guide product teams through Marty Cagan's discovery and strategy frameworks to validate problems, run discovery sprints, synthesize findings, and move into strategy work (OKRs and strategic bets). Designed for PMs, designers, and engineering leads running in Claude Code. Generates discovery plans, interview guides, risk canvases, synthesis templates, and strategy documents as both artifacts and saved files.
+name: best-practice-empowered-product-team
+description: Guide product teams through discovery and strategy frameworks from Cagan and Torres to validate problems, run discovery sprints, synthesize findings with opportunity mapping, and move into strategy work (OKRs and strategic bets). Designed for PMs, designers, and engineering leads running in Claude Code. Generates 9 templates including opportunity assessments, solution trees, interview guides, and strategy documents as both artifacts and saved files.
 ---
 
-# Marty Cagan Product Discovery & Strategy Skill
+# Best Practice Empowered Product Team Skill
 
-This skill guides cross-functional product teams through Cagan's methodology for
-discovering and validating customer problems, then translating findings into strategy
-work. Built for Claude Code execution with file I/O capabilities.
+This skill guides cross-functional product teams through discovery and strategy
+methodology from Marty Cagan and Teresa Torres for discovering and validating customer
+problems, then translating findings into strategy work. Built for Claude Code execution
+with file I/O capabilities.
 
-## Core Principles (Cagan's 20 Principles)
+## Core Principles (From Cagan, Torres & Best Practices)
 
 ### Product Team (Empowered & Accountable)
 1. **Team Structure:** Cross-functional teams (PM, Design, Engineering) are empowered to solve problems, not implement features.

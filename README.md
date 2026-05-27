@@ -1,11 +1,12 @@
-# Cagan Product Discovery Skill
+# Best Practice Empowered Product Team Skill
 
-A comprehensive Claude skill for guiding product teams through Marty Cagan's product discovery and strategy frameworks.
+A comprehensive Claude skill for guiding product teams through discovery and strategy
+frameworks from Marty Cagan and Teresa Torres.
 
 ## What This Is
 
-This skill operationalizes Marty Cagan's discovery and strategy methodology into a
-working guide for product teams. It helps teams:
+This skill operationalizes Marty Cagan's and Teresa Torres's discovery and strategy
+methodology into a working guide for product teams. It helps teams:
 
 - Validate problem hypotheses using Cagan's four product risks framework
 - Plan and execute customer discovery research
@@ -14,35 +15,40 @@ working guide for product teams. It helps teams:
 
 ## Key Features
 
-- **5-Stage Workflow:** Opportunity Assessment → Problem Validation → Discovery Planning → Synthesis → Strategy
+- **5-Stage Workflow:** Opportunity Assessment → Problem Validation → Discovery Planning
+  → Discovery Synthesis → Strategy Definition
+- **9 Templates:** From opportunity assessment through strategic bets, including
+  Opportunity Solution Trees for planning and synthesis
 - **Collaborative:** Emphasizes cross-functional discovery (PM, Designer, Engineer)
-- **File Generation:** Creates both saved files (for version control) and artifacts (for editing)
 - **Risk Assessment:** Uses Cagan's value/usability/viability/feasibility framework
+- **Opportunity Mapping:** Integrates Torres's Opportunity Solution Trees to visualize
+  discovery journey and solutions
 - **Problem-Focused:** Discovers problems before solutions, avoids confirmation bias
+- **File Generation:** Creates both saved files (for version control) and artifacts (for editing)
 
 ## File Structure
 
 ```tree
-cagan-product-discovery/
-├── SKILL.md                          # Main skill definition
+best-practice-empowered-product-team/
+├── SKILL.md                          # Skill definition & workflow stages
 ├── README.md                         # This file
 ├── frameworks/
-│   └── 01-discovery-process.md      # Discovery methodology
+│   └── 01-discovery-process.md      # Discovery methodology & risk assessment
 ├── guides/
-│   ├── QUICK_START.md               # Getting started
-│   └── REFERENCES.md                # Maps to Cagan's published work
+│   ├── QUICK_START.md               # Getting started guide
+│   └── REFERENCES.md                # Maps frameworks to Cagan & Torres published work
 ├── examples/
-│   └── EXAMPLE_WALKTHROUGH.md       # End-to-end example
+│   └── EXAMPLE_WALKTHROUGH.md       # Complete workflow example
 └── templates/
-    ├── opportunity-assessment.md      # Assess opportunities pre-discovery
-    ├── opportunity-solution-tree-plan.md # Plan solutions & experiments
-    ├── problem-validation.md          # Validate problem hypothesis
-    ├── discovery-plan.md              # Plan discovery research
-    ├── interview-guide.md             # Guide for customer interviews
-    ├── opportunity-solution-tree-synthesis.md # Map discovery results
-    ├── discovery-readout.md           # Synthesize findings
-    ├── okr-definition.md              # Define OKRs from insights
-    └── strategic-bet.md               # Document strategic bet
+    ├── opportunity-assessment.md      # Pre-Stage: Assess opportunity viability
+    ├── opportunity-solution-tree-plan.md # Stage 2: Map solutions & experiments
+    ├── problem-validation.md          # Stage 1: Validate problem hypothesis
+    ├── discovery-plan.md              # Stage 2: Plan discovery approach
+    ├── interview-guide.md             # Stage 2: Guide for customer interviews
+    ├── opportunity-solution-tree-synthesis.md # Stage 3: Map discovery results
+    ├── discovery-readout.md           # Stage 3: Synthesize findings & patterns
+    ├── okr-definition.md              # Stage 4: Define OKRs from insights
+    └── strategic-bet.md               # Stage 4: Document strategic bet
 ```
 
 ## Quick Start
@@ -54,50 +60,60 @@ cagan-product-discovery/
 ```
 
 ```text
-I want to use the Cagan product discovery skill.
+I want to use the Best Practice Empowered Product Team skill.
 
 Project folder: /Users/me/projects/my-project
-Problem hypothesis: [your hypothesis]
-North Star: [your north star]
+Starting point: [opportunity assessment/problem validation/discovery execution/synthesis]
+
+[Context about your situation]
 ```
 
 ### Option 2: Add as Claude Project
 
-1. Create a new Claude Project
+1. Create a new Claude Project: "Empowered Product Team - Discovery & Strategy"
 2. Upload all files from this repository
-3. Reference in project instructions
+3. Set project instructions to load this skill
+4. Reference it when starting discovery work
 
 ## Workflow Overview
 
 ### Pre-Stage: Opportunity Assessment (1 week)
-- Evaluate strategic fit and market potential
-- Score business viability and technical feasibility
-- Decide: GO / EXPLORE / HOLD / NO GO
+**When:** Evaluating a new opportunity before committing team resources  
+**Deliverables:** Scored opportunity assessment with GO/EXPLORE/HOLD/NO GO decision  
+**Key Activities:**
+- Score strategic fit, market potential, desirability, viability, feasibility
+- Identify key assumptions to test
 
 ### Stage 1: Problem Validation (1-2 weeks)
-- Assess four product risks
-- Create problem validation document
-- Make go/no-go decision
+**When:** After opportunity assessment, validate the core problem hypothesis  
+**Deliverables:** Problem validation document with risk assessment  
+**Key Activities:**
+- Assess four product risks (value, usability, viability, feasibility)
+- Make go/no-go decision for discovery
 
-### Stage 2: Discovery Planning (1 week)
-- Design research approach
-- Create interview guide
-- Build recruiting strategy
+### Stage 2: Discovery Planning & Execution (3-5 weeks)
+**When:** After problem validation, run customer discovery research  
+**Deliverables:** Interview guide, Opportunity Solution Tree (plan), interview data  
+**Key Activities:**
+- Design research approach and Opportunity Solution Tree to plan solutions
+- Conduct 20-30 customer interviews
+- Document findings and observations
 
-### Stage 3: Discovery Execution (2-4 weeks)
-- Conduct customer interviews
-- Observe behaviors and workflows
-- Document findings
+### Stage 3: Discovery Synthesis (1-2 weeks)
+**When:** After interviews complete, synthesize learnings  
+**Deliverables:** Discovery readout, Opportunity Solution Tree (synthesis), patterns document  
+**Key Activities:**
+- Extract patterns from raw data (not cherry-picked quotes)
+- Team reviews all interviews together
+- Map validated solutions back to opportunities and experiments
 
-### Stage 4: Discovery Synthesis (1-2 weeks)
-- Extract patterns from raw data
-- Create discovery readout
-- Prepare for strategy definition
-
-### Stage 5: Strategy Definition (1 week)
-- Define OKRs
-- Create strategic bets
-- Plan handoff to delivery
+### Stage 4: Strategy Definition (1 week)
+**When:** After synthesis, define next steps based on learnings  
+**Deliverables:** OKRs, strategic bets, delivery handoff  
+**Key Activities:**
+- Define OKRs for validated opportunity
+- Document strategic bet with experiment results
+- Plan go-to-market approach
 
 ## Key Principles
 
@@ -120,24 +136,37 @@ Discovery tests these risks before engineering investment.
 
 ## How to Use REFERENCES.md
 
-The `guides/REFERENCES.md` file maps Cagan's published work to the skill:
+The `guides/REFERENCES.md` file maps discovery and strategy frameworks to published work:
 
-- **Books:** Specific chapters from INSPIRED, EMPOWERED, TRANSFORMED
-- **SVPG Blog:** Posts organized by topic
-- **Framework Mapping:** Which sources support which frameworks
-- **Version History:** Track updates as you deepen engagement
+- **Books:** Specific chapters from Cagan's INSPIRED, EMPOWERED, TRANSFORMED
+- **Blog Posts:** SVPG posts + external resources on discovery and opportunity mapping
+- **Frameworks:** Mapping which sources support which skill frameworks
+- **Version History:** Track updates and additions to the resource library
 
-As you read Cagan's work, update this document with new references and insights.
+As you read Cagan, Torres, and other product leaders, update this document with new
+references. The Opportunity Solution Tree templates are based on Teresa Torres's work.
 
 ## Customization
 
-This skill is a starting point, not a fixed process:
+This skill is a starting point, not a fixed process. All 9 templates can be adapted:
 
-- **Adapt templates** for your product domain (B2B, SaaS, hardware, etc.)
-- **Add examples** from your company
-- **Adjust timeline** to your constraints
-- **Create variations** for different team sizes/situations
-- **Update REFERENCES.md** as you read Cagan
+**Pre-Stage & Validation:**
+- Adjust opportunity assessment criteria for your industry
+- Customize the four product risks for your context
+
+**Discovery:**
+- Adapt interview guides for your domain (B2B, SaaS, hardware, marketplace, etc.)
+- Modify Opportunity Solution Tree for your solution landscape
+- Scale discovery timeline based on complexity and budget
+
+**Strategy:**
+- Customize OKR templates for your company's goal-setting approach
+- Adjust strategic bet framework for your planning cadence
+
+**General:**
+- Add examples and case studies from your company
+- Create variations for different team sizes or situations
+- Update REFERENCES.md as you read Cagan, Torres, and other leaders
 
 ## Success Metrics
 
