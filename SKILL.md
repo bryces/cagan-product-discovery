@@ -152,6 +152,18 @@ Create `/discovery/02-discovery-plan.md` containing:
 
 **Presentation:** Create artifact with discovery plan template.
 
+#### Optional: Create Opportunity Solution Tree (Planning)
+
+If team wants to map potential solutions and experiments before discovery:
+
+Create `/discovery/02b-opportunity-solution-tree-plan.md` containing:
+- Root opportunity/problem statement
+- 3-5 potential solutions to explore
+- Specific experiments to test each solution
+- Timeline and success criteria
+
+**When to use:** Helps teams think through solution space and plan experiments strategically.
+
 #### Generate Interview Guide
 
 Create `/discovery/03-interview-guide.md` containing:
@@ -221,6 +233,16 @@ Create `/synthesis/03-discovery-readout.md` for:
 - What we now know (vs. hypothesized)
 - Open questions remaining
 - Recommendations for next step
+
+### Optional: Create Opportunity Solution Tree (Synthesis)
+
+After completing discovery readout, create `/synthesis/04-opportunity-solution-tree-synthesis.md`:
+- Map which solutions customers validated/invalidated
+- Connect each solution to specific experiments and findings
+- Show patterns across customer segments
+- Visualize path from opportunity → tested solutions → validated approaches
+
+**When to use:** Helps teams see which experiments informed which decisions. Bridges from messy discovery data to clear strategy.
 
 **Presentation:** Create artifacts for each template.
 

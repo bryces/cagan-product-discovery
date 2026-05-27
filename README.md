@@ -34,12 +34,15 @@ cagan-product-discovery/
 ├── examples/
 │   └── EXAMPLE_WALKTHROUGH.md       # End-to-end example
 └── templates/
-    ├── problem-validation.md         # Template
-    ├── discovery-plan.md             # Template
-    ├── interview-guide.md            # Template
-    ├── discovery-readout.md          # Template
-    ├── okr-definition.md             # Template
-    └── strategic-bet.md              # Template
+    ├── opportunity-assessment.md      # Assess opportunities pre-discovery
+    ├── opportunity-solution-tree-plan.md # Plan solutions & experiments
+    ├── problem-validation.md          # Validate problem hypothesis
+    ├── discovery-plan.md              # Plan discovery research
+    ├── interview-guide.md             # Guide for customer interviews
+    ├── opportunity-solution-tree-synthesis.md # Map discovery results
+    ├── discovery-readout.md           # Synthesize findings
+    ├── okr-definition.md              # Define OKRs from insights
+    └── strategic-bet.md               # Document strategic bet
 ```
 
 ## Quick Start
