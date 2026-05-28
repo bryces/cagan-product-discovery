@@ -51,6 +51,7 @@ This skill guides teams through five interconnected stages:
 2. **Discovery Planning & Execution** - Design and run discovery research
 3. **Synthesis & Insights** - Extract patterns and validate findings
 4. **Strategy Definition** - Translate insights into OKRs and strategic bets
+5. **Presentation Generation** - Create presentation-ready outputs for stakeholders
 
 ---
 
@@ -313,6 +314,66 @@ If team decides not to pursue: Create `/discovery/decision-log.md`:
 - Why we decided not to pursue this
 - What we learned
 - How this informs future strategy
+
+---
+
+## Stage 5: Presentation Generation
+
+### Entry Point: Presentation Generation
+
+When user indicates all discovery and strategy work is complete and they need to
+present findings to leadership, peers, or the organization:
+
+1. **Project folder path** - Location of the completed discovery work
+2. **Audience** - Leadership, all-hands, peers, board?
+3. **Opportunity name** - For the presentation title
+4. **Any custom context** - Specific stakeholder concerns or framing
+
+### Generation Approach
+
+Create two presentation formats from the completed discovery work:
+
+#### 1. Executive Summary Document
+
+Create `/presentations/executive-summary.md` containing:
+- TL;DR (2–3 sentences)
+- Opportunity scorecard (5 dimensions: Strategic Fit, Market Potential, Desirability,
+  Viability, Feasibility)
+- Key findings (3 patterns with evidence and confidence levels)
+- Customer segments (A/B/C with key needs and willingness to pay)
+- Recommendation (GO/NO-GO/CONDITIONAL with clear rationale)
+- How we'll measure success (OKRs: Metric, Baseline, Target, Timeline)
+- Strategic bet (bet statement, why, top 2 risks, pivots if wrong)
+- Next steps (immediate and short-term with owners)
+
+**Use:** Shared document for reference, slides-friendly source material
+
+#### 2. HTML Slide Deck
+
+Create `/presentations/slide-deck.html` containing:
+- 7 slides in a self-contained HTML file (print-to-PDF compatible)
+- Interactive browser navigation (arrow keys or buttons)
+- Slide 1: Title slide
+- Slide 2: Opportunity scorecard with radar chart + GO/EXPLORE/HOLD/NO GO badge
+- Slide 3: Key findings (3 finding cards with pattern, evidence, confidence)
+- Slide 4: Customer segments (3 segment cards with needs and pain points)
+- Slide 5: Strategic bet (bet statement + top risks table)
+- Slide 6: Success metrics (OKR table: Key Result / Baseline / Target / Timeline)
+- Slide 7: Next steps (immediate and short-term actions)
+
+**Use:** Present in meetings, share as PDF, reference during strategy discussions
+
+### Output Structure
+
+```tree
+/project-folder/
+├── discovery/        # Stages 0–2
+├── synthesis/        # Stage 3
+├── strategy/         # Stage 4
+└── presentations/
+    ├── executive-summary.md    # Rich reference doc
+    └── slide-deck.html         # 7-slide interactive HTML deck
+```
 
 ---
 

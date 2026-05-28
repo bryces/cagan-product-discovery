@@ -48,7 +48,9 @@ best-practice-empowered-product-team/
     ├── opportunity-solution-tree-synthesis.md # Stage 3: Map discovery results
     ├── discovery-readout.md           # Stage 3: Synthesize findings & patterns
     ├── okr-definition.md              # Stage 4: Define OKRs from insights
-    └── strategic-bet.md               # Stage 4: Document strategic bet
+    ├── strategic-bet.md               # Stage 4: Document strategic bet
+    ├── executive-summary.md           # Stage 5: Presentation summary doc
+    └── slide-deck.html                # Stage 5: 7-slide HTML deck
 ```
 
 ## Quick Start
@@ -114,6 +116,14 @@ Starting point: [opportunity assessment/problem validation/discovery execution/s
 - Define OKRs for validated opportunity
 - Document strategic bet with experiment results
 - Plan go-to-market approach
+
+### Stage 5: Presentation Generation (1-2 days)
+**When:** After strategy is finalized, prepare presentations for stakeholders  
+**Deliverables:** Executive summary document, interactive HTML slide deck  
+**Key Activities:**
+- Generate leadership-ready executive summary from all discovery work
+- Create 7-slide HTML presentation with charts and data tables
+- Prepare for all-hands, board, or peer reviews
 
 ## Key Principles
 

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Opportunity Name] - Discovery & Strategy Presentation</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .slides-container {
+      max-width: 1024px;
+      margin: 20px auto;
+    }
+
+    .slide {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 60px;
+      margin-bottom: 20px;
+      page-break-after: always;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    @media print {
+      body { background: white; }
+      .slide { margin-bottom: 0; border: none; page-break-after: always; box-shadow: none; }
+      .nav-controls { display: none; }
+    }
+
+    .slide h1 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      color: #1a1a1a;
+      line-height: 1.2;
+    }
+
+    .slide h2 {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 32px;
+      color: #1a1a1a;
+      line-height: 1.3;
+    }
+
+    .slide h3 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    .slide p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      color: #555;
+    }
+
+    .slide-number {
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    /* Slide 1: Title */
+    .slide-title {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .slide-title h1 {
+      color: white;
+      font-size: 56px;
+      margin-bottom: 24px;
+    }
+
+    .slide-title .subtitle {
+      font-size: 24px;
+      opacity: 0.95;
+      margin-bottom: 12px;
+    }
+
+    .slide-title .meta {
+      font-size: 16px;
+      opacity: 0.8;
+      margin-top: 32px;
+    }
+
+    /* Slide 2: Scorecard with Chart */
+    .scorecard-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .scorecard-chart {
+      position: relative;
+      height: 300px;
+    }
+
+    .scorecard-decision {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .decision-badge {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 4px;
+      width: fit-content;
+    }
+
+    .decision-badge.go { background: #10b981; color: white; }
+    .decision-badge.explore { background: #f59e0b; color: white; }
+    .decision-badge.hold { background: #6b7280; color: white; }
+    .decision-badge.nogo { background: #ef4444; color: white; }
+
+    .decision-rationale {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* Slide 3: Findings */
+    .findings-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+    }
+
+    .finding-card {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .finding-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin: 0;
+    }
+
+    .finding-card p {
+      font-size: 14px;
+      margin: 0;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .confidence {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    .confidence.high { background: #d1fae5; color: #065f46; }
+    .confidence.medium { background: #fed7aa; color: #92400e; }
+    .confidence.low { background: #fee2e2; color: #7f1d1d; }
+
+    /* Slide 4: Segments */
+    .segments-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    .segment-card {
+      background: #f3f4f6;
+      border-left: 4px solid #667eea;
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    .segment-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #1a1a1a;
+    }
+
+    .segment-card ul {
+      list-style: none;
+      font-size: 14px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .segment-card li {
+      margin-bottom: 8px;
+    }
+
+    .segment-card strong {
+      color: #333;
+    }
+
+    /* Slide 5: Recommendation */
+    .recommendation-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .recommendation-statement {
+      background: #eff6ff;
+      border-left: 4px solid #667eea;
+      padding: 24px;
+      border-radius: 4px;
+    }
+
+    .recommendation-statement p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    .risks-table {
+      font-size: 13px;
+      width: 100%;
+    }
+
+    .risks-table th {
+      background: #f3f4f6;
+      padding: 8px;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 2px solid #e5e7eb;
+    }
+
+    .risks-table td {
+      padding: 8px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    /* Slide 6: OKRs */
+    .okrs-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .okrs-table th {
+      background: #f3f4f6;
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 2px solid #e5e7eb;
+      color: #333;
+    }
+
+    .okrs-table td {
+      padding: 12px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #555;
+    }
+
+    /* Slide 7: Next Steps */
+    .next-steps-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .steps-column h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #1a1a1a;
+    }
+
+    .steps-column ul {
+      list-style: none;
+      font-size: 15px;
+      line-height: 2;
+      color: #555;
+    }
+
+    .steps-column li {
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .steps-column li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+      color: #667eea;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    button {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    button:hover {
+      background: #5568d3;
+    }
+
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+
+    .slide-counter {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: #666;
+      display: none;
+      margin-top: 20px;
+    }
+
+    @media print {
+      .slide-counter { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slides-container">
+
+  <!-- Slide 1: Title -->
+  <div class="slide slide-title" data-slide="1">
+    <h1>[Opportunity Name]</h1>
+    <div class="subtitle">[One-line problem statement]</div>
+    <div class="meta">
+      <p>Team: [PM, Designer, Engineer names]</p>
+      <p>Date: [Discovery completion date]</p>
+    </div>
+    <div class="slide-number">1 / 7</div>
+  </div>
+
+  <!-- Slide 2: Opportunity Scorecard -->
+  <div class="slide" data-slide="2">
+    <h2>The Opportunity</h2>
+    <div class="scorecard-container">
+      <div class="scorecard-chart">
+        <canvas id="scorecard-chart"></canvas>
+      </div>
+      <div class="scorecard-decision">
+        <div>
+          <div class="decision-badge go">[GO / EXPLORE / HOLD / NO GO]</div>
+        </div>
+        <div class="decision-rationale">
+          <p><strong>Recommendation:</strong></p>
+          <p>[One clear sentence explaining the go/no-go decision based on scorecard]</p>
+        </div>
+        <div style="font-size: 14px; color: #555; margin-top: 16px;">
+          <p><strong>Overall Score:</strong> [X / 25]</p>
+          <p><strong>Key Insight:</strong> [One sentence about the opportunity]</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-number">2 / 7</div>
+  </div>
+
+  <!-- Slide 3: Key Findings -->
+  <div class="slide" data-slide="3">
+    <h2>What We Learned</h2>
+    <div class="findings-grid">
+      <div class="finding-card">
+        <h3>Finding 1: [Pattern Name]</h3>
+        <p>[Short description of the pattern]</p>
+        <p><strong>Evidence:</strong> [Frequency + customer quotes]</p>
+        <span class="confidence high">High Confidence</span>
+      </div>
+      <div class="finding-card">
+        <h3>Finding 2: [Pattern Name]</h3>
+        <p>[Short description of the pattern]</p>
+        <p><strong>Evidence:</strong> [Frequency + customer quotes]</p>
+        <span class="confidence high">High Confidence</span>
+      </div>
+      <div class="finding-card">
+        <h3>Finding 3: [Pattern Name]</h3>
+        <p>[Short description of the pattern]</p>
+        <p><strong>Evidence:</strong> [Frequency + customer quotes]</p>
+        <span class="confidence medium">Medium Confidence</span>
+      </div>
+    </div>
+    <div class="slide-number">3 / 7</div>
+  </div>
+
+  <!-- Slide 4: Customer Segments -->
+  <div class="slide" data-slide="4">
+    <h2>Who We're Solving For</h2>
+    <div class="segments-grid">
+      <div class="segment-card">
+        <h3>Segment A: [Name]</h3>
+        <ul>
+          <li><strong>Key Need:</strong> [What they're trying to accomplish]</li>
+          <li><strong>Pain Point:</strong> [Where it's hardest]</li>
+          <li><strong>Willingness to Pay:</strong> High</li>
+        </ul>
+      </div>
+      <div class="segment-card">
+        <h3>Segment B: [Name]</h3>
+        <ul>
+          <li><strong>Key Need:</strong> [What they're trying to accomplish]</li>
+          <li><strong>Pain Point:</strong> [Where it's hardest]</li>
+          <li><strong>Willingness to Pay:</strong> Medium</li>
+        </ul>
+      </div>
+      <div class="segment-card">
+        <h3>Segment C: [Name]</h3>
+        <ul>
+          <li><strong>Key Need:</strong> [What they're trying to accomplish]</li>
+          <li><strong>Pain Point:</strong> [Where it's hardest]</li>
+          <li><strong>Willingness to Pay:</strong> Medium</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number">4 / 7</div>
+  </div>
+
+  <!-- Slide 5: Strategic Bet -->
+  <div class="slide" data-slide="5">
+    <h2>Our Strategic Bet</h2>
+    <div class="recommendation-content">
+      <div class="recommendation-statement">
+        <p><strong>Bet:</strong></p>
+        <p>[Concise bet statement: "We are betting that [solution/approach] will achieve
+        [outcome] because [key insight]."]</p>
+        <p style="margin-top: 24px;"><strong>Why:</strong></p>
+        <p>[Customer evidence + business rationale in 2–3 sentences]</p>
+      </div>
+      <div>
+        <p style="font-size: 16px; margin-bottom: 16px;"><strong>Top Risks</strong></p>
+        <table class="risks-table">
+          <thead>
+            <tr>
+              <th>Risk</th>
+              <th>Impact</th>
+              <th>Likelihood</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>[Risk 1]</td>
+              <td>High</td>
+              <td>Medium</td>
+            </tr>
+            <tr>
+              <td>[Risk 2]</td>
+              <td>High</td>
+              <td>Low</td>
+            </tr>
+            <tr>
+              <td>[Risk 3]</td>
+              <td>Medium</td>
+              <td>Medium</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide-number">5 / 7</div>
+  </div>
+
+  <!-- Slide 6: OKRs / Success Metrics -->
+  <div class="slide" data-slide="6">
+    <h2>How We'll Know We Succeeded</h2>
+    <table class="okrs-table">
+      <thead>
+        <tr>
+          <th style="width: 30%;">Key Result</th>
+          <th style="width: 20%;">Baseline</th>
+          <th style="width: 20%;">Target</th>
+          <th style="width: 30%;">Timeline</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>[Metric 1 — customer outcome]</td>
+          <td>[Current]</td>
+          <td>[Goal]</td>
+          <td>[Q2 / 6 months]</td>
+        </tr>
+        <tr>
+          <td>[Metric 2 — business outcome]</td>
+          <td>[Current]</td>
+          <td>[Goal]</td>
+          <td>[Q2 / 6 months]</td>
+        </tr>
+        <tr>
+          <td>[Metric 3 — engagement/adoption]</td>
+          <td>[Current]</td>
+          <td>[Goal]</td>
+          <td>[Q2 / 6 months]</td>
+        </tr>
+        <tr>
+          <td>[Metric 4 — retention/expansion]</td>
+          <td>[Current]</td>
+          <td>[Goal]</td>
+          <td>[Q3 / 9 months]</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="slide-number">6 / 7</div>
+  </div>
+
+  <!-- Slide 7: Next Steps -->
+  <div class="slide" data-slide="7">
+    <h2>Next Steps</h2>
+    <div class="next-steps-content">
+      <div class="steps-column">
+        <h3>Immediate (Next Week)</h3>
+        <ul>
+          <li>[Owner]: Action item 1</li>
+          <li>[Owner]: Action item 2</li>
+          <li>[Owner]: Action item 3</li>
+        </ul>
+      </div>
+      <div class="steps-column">
+        <h3>Short Term (2–4 Weeks)</h3>
+        <ul>
+          <li>[Owner]: Action item 1</li>
+          <li>[Owner]: Action item 2</li>
+          <li>[Owner]: Action item 3</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-number">7 / 7</div>
+  </div>
+
+</div>
+
+<div class="nav-controls">
+  <button id="prev-btn" onclick="prevSlide()">← Previous</button>
+  <span id="slide-counter"></span>
+  <button id="next-btn" onclick="nextSlide()">Next →</button>
+</div>
+
+<script>
+  let currentSlide = 1;
+  const totalSlides = 7;
+
+  function showSlide(n) {
+    const slides = document.querySelectorAll('.slide');
+    if (n > totalSlides) currentSlide = totalSlides;
+    if (n < 1) currentSlide = 1;
+    slides.forEach(slide => slide.style.display = 'none');
+    slides[currentSlide - 1].style.display = 'flex';
+    document.getElementById('prev-btn').disabled = currentSlide === 1;
+    document.getElementById('next-btn').disabled = currentSlide === totalSlides;
+    document.getElementById('slide-counter').textContent = `Slide ${currentSlide} of ${totalSlides}`;
+  }
+
+  function nextSlide() {
+    currentSlide++;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide--;
+    showSlide(currentSlide);
+  }
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') nextSlide();
+    if (e.key === 'ArrowLeft') prevSlide();
+  });
+
+  // Initialize scorecard chart
+  const ctx = document.getElementById('scorecard-chart');
+  if (ctx) {
+    new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: ['Strategic\nFit', 'Market\nPotential', 'Customer\nDesirability', 'Business\nViability', 'Technical\nFeasibility'],
+        datasets: [{
+          label: 'Score',
+          data: [80, 75, 85, 70, 90],
+          borderColor: '#667eea',
+          backgroundColor: 'rgba(102, 126, 234, 0.1)',
+          borderWidth: 2,
+          pointRadius: 5,
+          pointBackgroundColor: '#667eea',
+          pointBorderColor: '#fff',
+          pointBorderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: { backgroundColor: 'rgba(0,0,0,0.8)', padding: 12, titleFont: { size: 12 }, bodyFont: { size: 12 } }
+        },
+        scales: {
+          r: {
+            beginAtZero: true,
+            max: 100,
+            ticks: { stepSize: 25, font: { size: 12 } },
+            grid: { color: '#e5e7eb' }
+          }
+        }
+      }
+    });
+  }
+
+  // Show first slide on load
+  showSlide(currentSlide);
+</script>
+
+</body>
+</html>
