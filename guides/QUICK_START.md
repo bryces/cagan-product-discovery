@@ -233,7 +233,7 @@ tracking all 6 stages. The skill-level `.sessions-index.md` lists all your proje
 **Resuming after a break:**
 
 ```text
-SKILL.md path: /path/to/cagan-product-discovery/SKILL.md
+SKILL.md path: /path/to/best-practice-empowered-product-team/SKILL.md
 
 I want to resume discovery work.
 What projects do I have in session?
