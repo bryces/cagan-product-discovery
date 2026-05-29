@@ -77,6 +77,60 @@ Starting point: [opportunity assessment/problem validation/discovery execution/s
 3. Set project instructions to load this skill
 4. Reference it when starting discovery work
 
+## Session State: Resume Your Work
+
+The skill automatically tracks all your discovery projects so you can pause and resume
+without losing your place.
+
+### How It Works
+
+**First time using the skill:**
+- You start a new discovery project
+- A session file is created in `.sessions/[project-name].md`
+- The sessions index (`.sessions-index.md`) is updated
+
+**Returning later:**
+- Invoke the skill again
+- It shows you all your active projects
+- You select which project to resume
+- Your progress is loaded and you continue from where you left off
+
+### Example
+
+```
+User: "I want to use the Best Practice Empowered Product Team skill"
+
+Skill: "I see 2 active projects:
+  1. Mobile Checkout (Stage 3, last worked May 25)
+  2. Subscription Model (Pre-Stage, started May 20)
+
+Resume Mobile Checkout or start a new project?"
+
+User: "Resume Mobile Checkout"
+
+Skill: "Loading your session...
+You were working on Stage 3: Discovery Synthesis.
+
+From your notes:
+- 20 interviews completed, 18 reviewed so far
+- Patterns: Trust barrier, Form friction, Speed insufficient
+- Next: Finish affinity mapping, create discovery readout
+
+Ready to continue?"
+```
+
+### Session Files
+
+- **`.sessions-index.md`** — Registry of all your projects (what stage each is at)
+- **`.sessions/[project-name].md`** — Detailed progress for each project
+  - All 6 stages with completion status
+  - Files created in each stage
+  - Timeline and notes
+  - Current work description for easy resumption
+
+You can work on multiple discovery projects concurrently and switch between them.
+Each has its own session file tracking progress independently.
+
 ## Workflow Overview
 
 ### Pre-Stage: Opportunity Assessment (1 week)

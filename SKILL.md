@@ -42,9 +42,81 @@ with file I/O capabilities.
 
 ---
 
+## Session State Management
+
+This skill uses persistent session tracking to help you resume discovery work across
+multiple sessions and projects.
+
+### How Sessions Work
+
+**First Interaction:**
+- User invokes the skill
+- Skill checks for `.sessions-index.md` (the sessions registry)
+- If no sessions exist: "Let's start a new discovery project"
+- If sessions exist: "I see you have [N] active projects"
+
+**Returning Later:**
+- User invokes the skill
+- Skill displays available projects and their current stage
+- User selects project to resume or starts a new one
+- Skill loads the session file and shows "You were working on [Stage]. Continue?"
+
+**During Discovery:**
+- After each major stage completes, the session file auto-updates with:
+  - Stage marked complete with timestamp
+  - Files created in that stage
+  - Notes on next steps
+- User can pause anytime; session is saved for later
+
+### Session File Structure
+
+**Registry:** `.sessions-index.md` (skill root)
+- Quick view of all projects
+- Current stage, completion %, last updated date
+- Used to show user options when resuming
+
+**Project Sessions:** `.sessions/[project-slug].md`
+- Detailed progress for each project
+- All 6 stages with status (Done ✅ / In Progress 🔄 / Pending ⏳)
+- Files created, timelines, notes
+- Current work description for easy resumption
+
+### Example Session Flow
+
+```
+User: "I want to use the Best Practice Empowered Product Team skill"
+
+Skill checks: Finds .sessions-index.md with 2 projects
+
+Skill: "I see you have 2 active projects:
+  1. Mobile Checkout (Stage 3 - In Progress, last worked May 25)
+  2. Subscription Model (Pre-Stage, started May 20)
+
+What would you like to do?
+A) Resume Mobile Checkout at Stage 3
+B) Resume Subscription Model from Pre-Stage
+C) Start a new discovery project"
+
+User: "A) Resume Mobile Checkout"
+
+Skill loads `.sessions/mobile-checkout.md` and displays:
+
+"You were working on Stage 3: Discovery Synthesis.
+
+From your notes:
+- 20 interviews completed (18 reviewed so far)
+- Patterns emerging: Trust barrier, Form friction, Speed insufficient
+- Next: Finish affinity mapping, create discovery readout
+- Files to create: synthesis/03-discovery-readout.md
+
+Ready to continue?"
+```
+
+---
+
 ## Workflow Overview
 
-This skill guides teams through five interconnected stages:
+This skill guides teams through six interconnected stages:
 
 0. **Opportunity Assessment** - Evaluate if an opportunity is worth investigating
 1. **Problem Validation** - Assess if the problem hypothesis is worth solving
