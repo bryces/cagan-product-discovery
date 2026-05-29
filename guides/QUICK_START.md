@@ -14,7 +14,7 @@ Clone or download the skill repository:
 
 ```bash
 git clone https://github.com/bryces/best-practice-empowered-product-team.git
-cd best-practice-empowered-product-team/cagan-product-discovery
+cd best-practice-empowered-product-team
 ```
 
 Note the full path to your local copy — you'll reference it when invoking the skill.
@@ -36,7 +36,7 @@ When starting a new discovery project in Claude Code:
 
 ```text
 I want to use the Best Practice Empowered Product Team skill.
-SKILL.md path: /path/to/best-practice-empowered-product-team/cagan-product-discovery/SKILL.md
+SKILL.md path: /path/to/best-practice-empowered-product-team/SKILL.md
 
 Project folder: /Users/me/projects/my-project
 Problem hypothesis: [your hypothesis]
@@ -49,7 +49,7 @@ Or resume an existing project:
 
 ```text
 I want to resume my discovery work.
-SKILL.md path: /path/to/cagan-product-discovery/SKILL.md
+SKILL.md path: /path/to/best-practice-empowered-product-team/SKILL.md
 
 What projects do I have in session?
 ```
@@ -93,7 +93,7 @@ To make the skill available team-wide in a codebase or workspace:
 This team uses the Best Practice Empowered Product Team skill for validating
 problems, running discovery, and defining strategy based on Cagan & Torres frameworks.
 
-Skill location: /shared/path/to/cagan-product-discovery/SKILL.md
+Skill location: /shared/path/to/best-practice-empowered-product-team/SKILL.md
 
 When starting discovery: "I want to use the Best Practice Empowered Product Team skill"
 ```
@@ -109,7 +109,7 @@ Now any teammate can invoke the skill from this workspace without copying the pa
 **Starting point:** Pre-Stage 0 (Opportunity Assessment)
 
 ```text
-SKILL.md path: /path/to/cagan-product-discovery/SKILL.md
+SKILL.md path: /path/to/best-practice-empowered-product-team/SKILL.md
 Project folder: /Users/me/projects/my-project
 
 Starting point: Pre-Stage 0 (Opportunity Assessment)
@@ -129,7 +129,7 @@ Desirability, Viability, Feasibility) and gives GO / EXPLORE / HOLD / NO GO reco
 **Starting point:** Stage 1 (Problem Validation)
 
 ```text
-SKILL.md path: /path/to/cagan-product-discovery/SKILL.md
+SKILL.md path: /path/to/best-practice-empowered-product-team/SKILL.md
 Project folder: /Users/me/projects/my-project
 
 Starting point: Stage 1 (Problem Validation)
@@ -149,7 +149,7 @@ and decides: GO to discovery or NO GO.
 **Starting point:** Stage 2 (Discovery Planning & Execution)
 
 ```text
-SKILL.md path: /path/to/cagan-product-discovery/SKILL.md
+SKILL.md path: /path/to/best-practice-empowered-product-team/SKILL.md
 Project folder: /Users/me/projects/my-project
 
 Starting point: Stage 2 (Discovery Planning & Execution)
@@ -169,7 +169,7 @@ Solution Tree to structure your solution exploration.
 **Starting point:** Stage 3 (Discovery Synthesis & Insights)
 
 ```text
-SKILL.md path: /path/to/cagan-product-discovery/SKILL.md
+SKILL.md path: /path/to/best-practice-empowered-product-team/SKILL.md
 Project folder: /Users/me/projects/my-project
 
 Starting point: Stage 3 (Discovery Synthesis & Insights)
@@ -189,7 +189,7 @@ Opportunity Solution Tree to map which solutions were validated/invalidated.
 **Starting point:** Stage 4 (Strategy Definition)
 
 ```text
-SKILL.md path: /path/to/cagan-product-discovery/SKILL.md
+SKILL.md path: /path/to/best-practice-empowered-product-team/SKILL.md
 Project folder: /Users/me/projects/my-project
 
 Starting point: Stage 4 (Strategy Definition)
@@ -209,7 +209,7 @@ delivery handoff summary for engineering.
 **Starting point:** Stage 5 (Presentation Generation)
 
 ```text
-SKILL.md path: /path/to/cagan-product-discovery/SKILL.md
+SKILL.md path: /path/to/best-practice-empowered-product-team/SKILL.md
 Project folder: /Users/me/projects/my-project
 
 Starting point: Stage 5 (Presentation Generation)
